@@ -1,5 +1,5 @@
 # Pitch Control
-This code computes the pitch control contribution of each player in the three zones of the pitch (defensive, middle, and attacking), with the option to apply individual velocities and a stamina factor for each player. The code is based on [LarieOnTracking](https://github.com/Friends-of-Tracking-Data-FoTD/LaurieOnTracking), which is the implementation of the model presented in [1].
+This code computes the pitch control contribution of each player in the three zones of the pitch (defensive, middle, and attacking), with the option to apply individual velocities and a stamina factor for each player. The code is based on [LaurieOnTracking](https://github.com/Friends-of-Tracking-Data-FoTD/LaurieOnTracking), which is the implementation of the model presented in [1].
 
 # Data
 The data used in this code is the tracking data of a football match obtained with Tracab Optical Tracking System. The data used is not publicly available, but the code can be used with any tracking data that has the same format as the one used in the code. 
