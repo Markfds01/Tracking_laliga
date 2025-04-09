@@ -35,7 +35,7 @@ The code can be executed in several ways. You need to specify the name of the tr
 [1] Spearman, W., Basye, A., Dick, G., Hotovy, R., & Pop, P. (2017, March). Physics-based modeling of pass probabilities in soccer. In Proceeding of the 11th MIT Sloan Sports Analytics Conference (Vol. 1).
 
 # License
-This project is licensed under the MIR Licence -- see the LICENSE file for details.
+This project is licensed under the MIT Licence -- see the LICENSE file for details.
 
 
 

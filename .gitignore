@@ -162,12 +162,8 @@ cython_debug/
 .idea/
 
 # Other
-data/processed/
-data/raw/
 figures/
-data/pitch_control_contributions
 DATOS/
-results_DATOS/
 plots/
 SHIELDS/
 
