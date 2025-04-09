@@ -17,7 +17,7 @@ To use this code, you'll need tracking data from a football match, typically cap
 
 Each player should have a unique ID and corresponding position data, with a separate entry for each time frame. 
 
-A sample dataset can be found in the `data/processed` folder.
+A sample dataset can be found in the `data/processed` folder, the name of the file should have the id of the match at the end (number).
 
 # How to execute code
 
@@ -25,10 +25,10 @@ The code can be executed in several ways. You need to specify the name of the tr
 
 ## Some examples of how to run the code:
 ```bash
-   python main.py Aclean1_1074815 -o 25
-   python main.py Aclean1_1074815 -o 25 -iv
-   python main.py Aclean1_1074815 -o 25 -iv -sh 1.2
-   python main.py Aclean1_1074815 -o 25 -iv -sh 1.2 -sa 0.9 -pos Defenders
+   python main.py artificial_data_1 -o 25
+   python main.py artificial_data_1 -o 25 -iv
+   python main.py artificial_data_1 -o 25 -iv -sh 1.2
+   python main.py artificial_data_1 -o 25 -iv -sh 1.2 -sa 0.9 -pos Defenders
    ```
 
 # References
