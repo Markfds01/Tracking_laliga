@@ -1,13 +1,23 @@
+# Pitch Control
+This code computes the pitch control contribution contribution of each player of both teams in each of the three zones of the pitch (defensive, middle, and attacking). The code is based on [text](https://github.com/Friends-of-Tracking-Data-FoTD/LaurieOnTracking), which is the implementation of the model presented in [1].
+
+# Data
+The data used in this code is the tracking data of a football match obtained with Tracab Optical Tracking System. The data used is not publicly available, but the code can be used with any tracking data that has the same format as the one used in the code. The data should be in a CSV file where each player should have a unique ID and two position columns (home_n_x, home_n_y, away_n_x, away_n_y) for each player. The data should also have a time column (time), two ball positions columns, one indicating if the ball is in play or not and one indicating the possession of the ball (home, away). A dummy example can be found in the data/processed folder.
+
 # How to execute code
 
-You need to insert the raw datasets in 'data/raw'. Then, run the jupyter notebook to process it. The code will store it in 'data/processed'.
+The code can be executed in multiple ways, you need to add the name of the traking file you want to analyze and the number of frames between pitch control computation.
+Then you can run it with individual velocities (-iv), with stamina factor applied to home team or/and away team (sh/sa) and there is also the possibility to apply the stamina factor to a certain position (defenders, midfielders, strikers).
 
-# Optimizations
+## Some examples of how to run the code:
+```bash
+   python main.py Aclean1_1074815 -o 25
+   python main.py Aclean1_1074815 -o 25 -iv
+   python main.py Aclean1_1074815 -o 25 -iv -sh 1.2
+   python main.py Aclean1_1074815 -o 25 -iv -sh 1.2 -sa 1.2 -pos Defenders
+   ```
 
-```
- 28709916   75.410    0.000   75.410    0.000 pitch_control.py:118(probability_intercept_ball)
-    80000   48.830    0.001  158.390    0.002 pitch_control.py:208(calculate_pitch_control_at_target)
- 76095138   15.968    0.000   21.507    0.000 {built-in method builtins.isinstance}
-  1585106   14.623    0.000  132.534    0.000 series.py:315(__init__)
-  1585106   13.073    0.000  177.114    0.000 generic.py:3634(xs)
-```
+
+
+
+
