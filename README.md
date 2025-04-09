@@ -21,15 +21,14 @@ A sample dataset can be found in the `data/processed` folder.
 
 # How to execute code
 
-The code can be executed in multiple ways, you need to add the name of the traking file you want to analyze and the number of frames between pitch control computation.
-Then you can run it with individual velocities (-iv), with stamina factor applied to home team or/and away team (sh/sa) and there is also the possibility to apply the stamina factor to a certain position (defenders, midfielders, strikers).
+The code can be executed in several ways. You need to specify the name of the tracking file you want to analyze and the number of frames between each pitch control computation. The code can then be run with individual velocities (-iv), and the stamina factor can be applied to either or both teams (home team with sh and away team with sa). Additionally, you can apply the stamina factor to specific player positions, such as defenders, midfielders, or strikers.
 
 ## Some examples of how to run the code:
 ```bash
    python main.py Aclean1_1074815 -o 25
    python main.py Aclean1_1074815 -o 25 -iv
    python main.py Aclean1_1074815 -o 25 -iv -sh 1.2
-   python main.py Aclean1_1074815 -o 25 -iv -sh 1.2 -sa 1.2 -pos Defenders
+   python main.py Aclean1_1074815 -o 25 -iv -sh 1.2 -sa 0.9 -pos Defenders
    ```
 
 # References
