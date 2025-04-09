@@ -28,7 +28,7 @@ The code can be executed in several ways. You need to specify the name of the tr
    python main.py artificial_data_1 -o 25
    python main.py artificial_data_1 -o 25 -iv
    python main.py artificial_data_1 -o 25 -iv -sh 1.2
-   python main.py artificial_data_1 -o 25 -iv -sh 1.2 -sa 0.9 -pos Defenders
+   python main.py artificial_data_1 -o 25 -iv -sh 1.2 -sa 0.9 -pos Defender
    ```
 
 # References
